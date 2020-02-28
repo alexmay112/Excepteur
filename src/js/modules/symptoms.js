@@ -1,3 +1,3 @@
 export default () => {
-  console.log('Hello wordl!');
+  console.log('Kedria!!!');
 };
