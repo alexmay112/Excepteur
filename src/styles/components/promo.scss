@@ -200,6 +200,34 @@
   .price__count {
     padding-top: 13px;
     font-size: 28px;
+    position: relative;
+
+  }
+
+  .x_price_previous {
+    margin-right: 2px;
+    letter-spacing: -1.4px;
+    position: relative;
+
+    &::before,
+    &::after {
+      content: "";
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      width: 60px;
+      height: 1px;
+      background-color: #f57373;
+    }
+
+    &::before {
+      transform: translate(-50%, -50%) rotate(20deg);
+    }
+
+    &::after {
+      transform: translate(-50%, -50%) rotate(-20deg);
+    }
+
   }
 
   .x_currency {
@@ -215,7 +243,33 @@
     font-size: 44px;
   }
 
+  .x_price_current {
+    margin-right: 2px;
+    letter-spacing: -1.4px;
+  }
+
   .x_currency {
     font-size: 16px;
   }
+}
+
+.form__last {
+  margin-bottom: 15px;
+  color: #000000;
+  font-size: 16px;
+  font-weight: 500;
+}
+
+input {
+  padding: 23px 23px 23px 52px;
+  border-radius: 5px;
+  font-size: 16px;
+  line-height: 18px;
+  background-color: #ffffff;
+  border: 1px solid #dedddd;
+  box-shadow: inset 2px 3px 5px rgba(34, 35, 39, 0.09);
+}
+
+.input-wrap {
+  margin-bottom: 15px;
 }
