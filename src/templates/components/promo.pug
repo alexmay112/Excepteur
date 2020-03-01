@@ -60,7 +60,7 @@ section.promo.section-bg
                                     span.x_currency грн.
                         p.form__last Осталось упаковок со&nbsp;скидкой: 
                             span.lastpack.green-text 15
-                    .form__main
+                    form.x_order_form.form__main(action="/submit" method="post")
                         .input-wrap.input-wrap--name
                             input.form__input(type="text" name="name" placeholder="Мое имя" required)
                         .input-wrap.input-wrap--tel
