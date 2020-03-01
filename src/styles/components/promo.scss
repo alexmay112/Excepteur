@@ -47,7 +47,7 @@
   border-bottom: 1px solid #d1d1d1;
 
   &:hover {
-    border-bottom: 1px dashed #d1d1d1;
+    border-bottom: 1px dashed #ec1457;
   }
 }
 
@@ -63,6 +63,7 @@
 .promo__center {
   width: 402px;
   margin-right: 20px;
+  position: relative;
 }
 
 .promo__slogan {
@@ -135,14 +136,17 @@
   font-weight: 400;
 }
 
+.prod {
+  width: 431px;
+  position: absolute;
+  left: -450px;
+  bottom: -126px;
+}
+
 .promo__accent {
   margin-top: 8px;
   font-size: 31px;
   font-weight: 500;
-}
-
-.promo__form {
-  width: 300px;
 }
 
 .promo__pic {
@@ -157,4 +161,61 @@
   width: 355px;
   top: -57px;
   left: calc(50% - 740px);
+}
+
+.promo__form {
+  width: 300px;
+}
+
+.form {
+  text-align: center;
+}
+
+.form__title {
+  max-width: 192px;
+  margin: 0 auto;
+  font-size: 23px;
+  font-weight: 500;
+
+  .green-text {
+    display: block;
+    font-size: 24px;
+  }
+}
+
+.form__price {
+  margin: 15px 0;
+  display: flex;
+}
+
+.price-old,
+.price-new {
+  width: 50%;
+}
+
+.price-old {
+  color: #666666;
+  border-right: 1px solid #e0dfdd;
+
+  .price__count {
+    padding-top: 13px;
+    font-size: 28px;
+  }
+
+  .x_currency {
+    font-size: 16px;
+  }
+}
+
+.price-new {
+  color: #30302f;
+
+  .price__count {
+    font-weight: 900;
+    font-size: 44px;
+  }
+
+  .x_currency {
+    font-size: 16px;
+  }
 }
