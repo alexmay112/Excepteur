@@ -1,5 +1,160 @@
-.promo__list {
+.promo {
+  padding: 80px 0 90px;
+}
+
+.header {
+  max-width: 720px;
+  margin-right: 0;
+  margin-left: auto;
+  margin-bottom: 40px;
   display: flex;
-  max-width: 400px;
+  align-items: center;
   justify-content: space-between;
+}
+
+.menu {
+  display: flex;
+}
+
+.menu__item {
+  margin-right: 20px;
+  padding: 3px 0 3px 38px;
+  background-position: 0 50%;
+  background-repeat: no-repeat;
+  background-size: 30px;
+
+  &:last-of-type {
+    margin-right: 0;
+  }
+}
+
+.menu__item:nth-child(1) {
+  background-image: url('../img/icon-menu1.png');
+}
+
+.menu__item:nth-child(2) {
+  background-image: url('../img/icon-menu2.png');
+}
+
+.menu__item:nth-child(3) {
+  background-image: url('../img/icon-menu3.png');
+}
+
+.menu__link {
+  color: #1a1a1a;
+  font-size: 18px;
+  line-height: 28px;
+  border-bottom: 1px solid #d1d1d1;
+
+  &:hover {
+    border-bottom: 1px dashed #d1d1d1;
+  }
+}
+
+.promo__content {
+  display: flex;
+  justify-content: flex-end;
+}
+
+.promo__left {
+  position: relative;
+}
+
+.promo__center {
+  width: 402px;
+  margin-right: 20px;
+}
+
+.promo__slogan {
+  margin-bottom: 49px;
+  font-size: 50px;
+  line-height: 48px;
+  color: #000;
+  font-weight: 900;
+}
+
+.bullets {
+  padding-left: 63px;
+}
+
+.bullets__item {
+  margin-bottom: 28px;
+  position: relative;
+}
+
+.bullets__check {
+  position: absolute;
+  top: -12px;
+  left: -66px;
+  border-radius: 50px;
+  background-color: #fff;
+
+  &::before {
+    content: "";
+    position: absolute;
+    height: 4px;
+    width: 21px;
+    top: 23px;
+    left: 16px;
+    background-color: #ffffff;
+    transform: rotate(-44deg);
+  }
+
+  &::after {
+    content: "";
+    position: absolute;
+    height: 4px;
+    width: 12px;
+    top: 26px;
+    left: 11px;
+    background-color: #ffffff;
+    transform: rotate(44deg);
+  }
+}
+
+.bullets__check-inner {
+  width: 36px;
+  height: 36px;
+  margin: 5px;
+  border-radius: 50px;
+  background-color: #3fc4c0;
+}
+
+.bullets__text {
+  font-size: 20px;
+  line-height: 1.4;
+  color: #000000;
+  font-weight: 600;
+}
+
+
+.bullets__thanks {
+  display: inline-block;
+  color: #5a5a5a;
+  font-size: 18px;
+  font-weight: 400;
+}
+
+.promo__accent {
+  margin-top: 8px;
+  font-size: 31px;
+  font-weight: 500;
+}
+
+.promo__form {
+  width: 300px;
+}
+
+.promo__pic {
+  width: 711px;
+  position: absolute;
+  top: -173px;
+  left: calc(50% - 620px);
+}
+
+.promo__decor {
+  position: absolute;
+  width: 355px;
+  top: -57px;
+  left: calc(50% - 740px);
 }
