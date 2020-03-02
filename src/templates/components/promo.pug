@@ -1,7 +1,72 @@
-include ../data/promo-data
-section.promo.block
-  .promo__container.container
-    h1.promo__title.title Hello world!
-    ul.promo__list
-      each item in promoData
-        li.promo__item!= item
+section.promo.section-bg
+    .container
+        .header
+            h1.logo
+                img.logo__img(src="img/logo.png", alt="Stop Active")
+            nav
+                ul.menu.header__menu
+                    li.menu__item
+                        a.menu__link(href='#reviews') Отзывы
+                    li.menu__item
+                        a.menu__link(href='#components') Состав
+                    li.menu__item
+                        a.menu__link(href='#order') Оплата и&nbsp;доставка
+        .promo__content
+            .promo__left
+                .promo__pic
+                    img(src="img/promo-pic.png", alt="legs")
+                .promo__decor
+                    img(src="img/promo-decor.png", alt="decor")
+            .promo__center
+                h2.promo__slogan Попрощайтесь с&nbsp;грибком стопы 
+                    span.red-text за&nbsp;1&nbsp;курс
+                    p.promo__accent применения 
+                        span.red-text Stop&nbsp;
+                        | Active
+                ul.bullets
+                    li.bullets__item
+                        .bullets__check
+                            .bullets__check-inner
+                        p.bullets__text Снимите зуд и&nbsp;покраснения 
+                            span.bullets__thanks благодаря прополису
+                    li.bullets__item
+                        .bullets__check
+                            .bullets__check-inner
+                        p.bullets__text Устраните неприятный запах 
+                            span.bullets__thanks благодаря маслу гвоздики
+                    li.bullets__item
+                        .bullets__check
+                            .bullets__check-inner
+                        p.bullets__text Придайте стопам ухоженный вид 
+                            span.bullets__thanks благодаря маслу чайного&nbsp;дерева
+                .prod
+                    img(src="img/prod.png", alt="Stop Active")
+            .promo__right
+                .form.promo__form
+                    .form__top
+                        p.form__title Успейте заказать со скидкой 
+                            span.green-text.nowrap до 
+                                span.date-0
+                        .form__price.price
+                            .price-old
+                                span.price__title Старая цена
+                                .price__count                                
+                                    span.x_price_previous 9999
+                                    span.x_currency грн.
+                            .price-new
+                                span.price__title Новая цена
+                                .price__count
+                                    span.x_price_current.green-text 999
+                                    span.x_currency грн.
+                        p.form__last Осталось упаковок со&nbsp;скидкой: 
+                            span.lastpack.green-text 15
+                    form.x_order_form.form__main(action="/submit" method="post")
+                        .input-wrap.input-wrap--name
+                            input.form__input(type="text" name="name" placeholder="Мое имя" required)
+                        .input-wrap.input-wrap--tel
+                            input.form__input(type="tel" name="phone" placeholder="Мой телефон" required)
+                        button.form__button.btn Заказать
+                            p.btn__note со скидкой
+                        p.form__note *при заказе курса
+                    p.form__bottom Оплата после получения
+
