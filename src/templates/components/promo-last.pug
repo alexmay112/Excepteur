@@ -1,16 +1,5 @@
-section.promo.section-bg
+section.promo.promo-last.section-bg
     .container
-        .header
-            h1.logo
-                img.logo__img(src="img/logo.png", alt="Stop Active")
-            nav
-                ul.menu.header__menu
-                    li.menu__item
-                        a.menu__link(href='#reviews') Отзывы
-                    li.menu__item
-                        a.menu__link(href='#components') Состав
-                    li.menu__item
-                        a.menu__link(href='#order') Оплата и&nbsp;доставка
         .promo__content
             .promo__left
                 .promo__pic
@@ -42,10 +31,11 @@ section.promo.section-bg
                 .prod
                     img(src="img/prod.png", alt="Stop Active")
             .promo__right
-                .form.promo__form
+                .form.promo__form.promo-last__form
                     .form__top
-                        p.form__title Закажите сейчас 
-                            span.green-text.nowrap по Акции 
+                        p.form__title Успейте заказать со скидкой 
+                            span.green-text.nowrap до 
+                                span.date-0
                         .form__price.price
                             .price-old
                                 span.price__title Старая цена
@@ -53,21 +43,19 @@ section.promo.section-bg
                                     span.x_price_previous 9999
                                     span.x_currency грн.
                             .price-new
-                                span.price__title Ваша цена
+                                span.price__title Новая цена
                                 .price__count
                                     span.x_price_current.green-text 999
                                     span.x_currency грн.
-                        .timer
-                            .timer__wrap
-                                .timer__title Осталось до конца 
-                                    span.green-text акции
-                                .timer__body
-                                    .timer__cell.hours 0
-                                    .timer__cell.hours 0
-                                    .timer__colon
-                                    .timer__cell.minutes 27
-                                    .timer__cell.minutes 27
-                                    .timer__colon
-                                    .timer__cell.seconds 0
-                                    .timer__cell.seconds 0
-                        button.promo__button.btn Заказать                       
+                        p.form__last Осталось упаковок со&nbsp;скидкой: 
+                            span.lastpack.green-text 15
+                    form.x_order_form.form__main(action="/submit" method="post")
+                        .input-wrap.input-wrap--name
+                            input.form__input(type="text" name="name" placeholder="Мое имя" required)
+                        .input-wrap.input-wrap--tel
+                            input.form__input(type="tel" name="phone" placeholder="Мой телефон" required)
+                        button.form__button.btn Заказать
+                            p.btn__note со скидкой
+                        p.form__note *при заказе курса
+                    p.form__bottom Оплата после получения
+
