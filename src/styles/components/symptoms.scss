@@ -1,0 +1,450 @@
+.symptoms {
+  // min-height: 845px;
+  padding: 100px 0;
+  background-color: #ffffff;
+  &__title { 
+    text-align: center;
+    margin-bottom: 52px;
+  }
+  &-content { 
+    max-width: 1168px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0 auto;
+  }
+  // левый блок
+  &-left {
+    width: 234px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+  }
+  &-item { 
+    width: 234px;
+    margin-bottom: 49px;
+    position: relative;
+    &:nth-child(2) {
+      margin-bottom: 59px;
+    }
+    &:nth-child(3) {
+      margin-bottom: 0;
+      &::before {
+        content: none;
+      }
+    }
+    &::before {
+      content: '';
+      width: 200px;
+      height: 1px;
+      background-color: #e8e8e8;
+      position: absolute;
+      bottom: -23px;
+      right: 0px;
+    }
+    // правые айтемсы 
+    &--right {
+      &::before {
+        content: '';
+        width: 200px;
+        height: 1px;
+        background-color: #e8e8e8;
+        position: absolute;
+        bottom: -23px;
+        left: 0px;
+      }
+    }
+    &__text {
+     font: 900 22px/28px $main-font;
+     text-align: right;
+     position: relative;
+     transition: color .5s;
+     // текст с права 
+     &--right {
+      text-align: left;
+      &::after{
+        content: '';
+        width: 11px;
+        height: 14px;
+        background: url(../img/s-rhomb.png) no-repeat;
+        position: absolute;
+        top: 8px;
+        left: -28px;
+      }
+    }
+     &::after{
+      content: '';
+      width: 11px;
+      height: 14px;
+      background: url(../img/s-rhomb.png) no-repeat;
+      position: absolute;
+      top: 8px;
+      right: -28px;
+    }
+    }
+  }
+  // центральный блок
+  &-center {
+    
+  }
+  &-foot {
+    width: 570px;
+    height: 570px;
+    background-image: url(../img/s-main-circle.png);
+    background-size: cover;
+    background-color:#dadcdc;
+    border-radius: 50%;
+    position: relative;
+    &-wrap {
+      width: 397px;
+      margin: 0 auto;
+    }
+    &__img {
+      position: absolute;
+      bottom: 0;
+      left: 50%;
+      transform: translateX(-52%);
+    }
+    &__pulse { 
+    display: block;
+    width: 21px;
+    height: 21px;
+    border: 7px solid #de0f54;
+    background-color: #fff;
+    border-radius: 50%;
+    position: absolute;
+    animation: 2s infinite pulse;
+    bottom: 0;
+    box-shadow: 0 0 100px rgba(158,130,39,.08);
+    &--animation {
+    display: block;
+    width: inherit;
+    height: inherit;
+    border-radius: 50%;
+    position: absolute;
+    right: -7px;
+    bottom: -7px;
+    }
+    }
+    // общие стили
+    &--first::after,&--second::after,&--third::after,&--fourth::after, &--fifth::after,&--sixth::after {
+      content: "";
+      position: absolute;
+      z-index: 5;
+      -webkit-animation: 1.5s opacity;
+      animation: 1.5s opacity;
+      opacity: 0;
+    }
+    // зуд
+    &--first { 
+      bottom: 20%;
+      left: 200px;
+      &::after {
+      bottom: 14px;
+      right: 3px;
+      width: 249px;
+      height: 245px;
+      border-top: 1px solid #a2a2a2;
+      border-right: 1px solid #a2a2a2;
+      }
+    }
+    // запах
+    &--second {
+      bottom: 30%;
+      right: 200px;
+      &::after {
+      bottom: 14px;
+      right: 3px;
+      width: 398px;
+      height: 111px;
+      border-top: 1px solid #a2a2a2;
+      border-right: 1px solid #a2a2a2;
+      }
+    }
+    // деформация ногтя
+    &--third {
+      top: 18%;
+      right: 245px;
+      &::after {
+        bottom: -238px;
+        right: 3px;
+        width: 353px;
+        height: 231px;
+        border-bottom: 1px solid #a2a2a2;
+        border-right: 1px solid #a2a2a2;
+      }
+    }
+    // шелушение
+    &--fourth {
+      top: 47%;
+      left: 188px;
+      &::after {
+        bottom: 14px;
+        right: -406px;
+        width: 410px;
+        height: 78px;
+        border-top: 1px solid #a2a2a2;
+        border-left: 1px solid #a2a2a2;
+      }
+  }
+  &--fifth {
+    top: 35%;
+    right: 206px;
+    &::after {
+      bottom: -54px;
+      right: -251px;
+      width: 255px;
+      height: 47px;
+      border-bottom: 1px solid #a2a2a2;
+      border-left: 1px solid #a2a2a2;
+    }
+}
+// волдыри
+  &--sixth {
+    top: 30%;
+    left: 195px;
+    &::after {
+      bottom: -170px;
+      right: -399px;
+      width: 403px;
+      height: 163px;
+      border-bottom: 1px solid #a2a2a2;
+      border-left: 1px solid #a2a2a2;
+    }
+}
+  }
+  // правый блок
+  &-right {
+    width: 234px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+  }
+}
+// зуд
+.active1 .symptoms-foot--second,
+.active1 .symptoms-foot--third,
+.active1 .symptoms-foot--fourth,
+.active1 .symptoms-foot--fifth,
+.active1 .symptoms-foot--sixth {
+    -webkit-animation: none;
+    animation: none;
+}
+.active1 .symptoms-foot--second::after,
+.active1 .symptoms-foot--third::after,
+.active1 .symptoms-foot--fourth::after,
+.active1 .symptoms-foot--fifth::after,
+.active1 .symptoms-foot--sixth::after {
+    display: none;
+}
+.active1 .text-1 {
+  color: #de0f54;
+}
+.active1 .symptoms-foot--first::after {
+  opacity: 1;
+}
+// запах
+.active2 .symptoms-foot--first,
+.active2 .symptoms-foot--third,
+.active2 .symptoms-foot--fourth,
+.active2 .symptoms-foot--fifth,
+.active2 .symptoms-foot--sixth {
+    -webkit-animation: none;
+    animation: none;
+}
+.active2 .symptoms-foot--first::after,
+.active2 .symptoms-foot--third::after,
+.active2 .symptoms-foot--fourth::after,
+.active2 .symptoms-foot--fifth::after,
+.active2 .symptoms-foot--sixth::after {
+    display: none;
+}
+.active2 .text-2 {
+  color: #de0f54;
+}
+.active2 .symptoms-foot--second::after {
+  opacity: 1;
+}
+// деформация ногтя
+.active3 .symptoms-foot--first,
+.active3 .symptoms-foot--second,
+.active3 .symptoms-foot--fourth,
+.active3 .symptoms-foot--fifth,
+.active3 .symptoms-foot--sixth {
+    -webkit-animation: none;
+    animation: none;
+}
+.active3 .symptoms-foot--first::after,
+.active3 .symptoms-foot--second::after,
+.active3 .symptoms-foot--fourth::after,
+.active3 .symptoms-foot--fifth::after,
+.active3 .symptoms-foot--sixth::after {
+    display: none;
+}
+.active3 .text-3 {
+  color: #de0f54;
+}
+
+.active3 .symptoms-foot--third::after {
+  opacity: 1;
+}
+// шелушение
+.active4 .symptoms-foot--first,
+.active4 .symptoms-foot--second,
+.active4 .symptoms-foot--third,
+.active4 .symptoms-foot--fifth,
+.active4 .symptoms-foot--sixth {
+    -webkit-animation: none;
+    animation: none;
+}
+.active4 .symptoms-foot--first::after,
+.active4 .symptoms-foot--second::after,
+.active4 .symptoms-foot--third::after,
+.active4 .symptoms-foot--fifth::after,
+.active4 .symptoms-foot--sixth::after {
+    display: none;
+}
+.active4 .text-4 {
+  color: #de0f54;
+}
+
+.active4 .symptoms-foot--fourth::after {
+  opacity: 1;
+}
+// волдыри
+.active5 .symptoms-foot--first,
+.active5 .symptoms-foot--second,
+.active5 .symptoms-foot--third,
+.active5 .symptoms-foot--fourth,
+.active5 .symptoms-foot--sixth {
+    -webkit-animation: none;
+    animation: none;
+}
+.active5 .symptoms-foot--first::after,
+.active5 .symptoms-foot--second::after,
+.active5 .symptoms-foot--third::after,
+.active5 .symptoms-foot--fourth::after,
+.active5 .symptoms-foot--sixth::after {
+    display: none;
+}
+.active5 .text-5 {
+  color: #de0f54;
+}
+
+.active5 .symptoms-foot--fifth::after {
+  opacity: 1;
+}
+// трещины на коже
+.active6 .symptoms-foot--first,
+.active6 .symptoms-foot--second,
+.active6 .symptoms-foot--third,
+.active6 .symptoms-foot--fourth,
+.active6 .symptoms-foot--fifth {
+    -webkit-animation: none;
+    animation: none;
+}
+.active6 .symptoms-foot--first::after,
+.active6 .symptoms-foot--second::after,
+.active6 .symptoms-foot--third::after,
+.active6 .symptoms-foot--fourth::after,
+.active6 .symptoms-foot--fifth::after {
+    display: none;
+}
+.active6 .text-6 {
+  color: #de0f54;
+}
+
+.active6 .symptoms-foot--sixth::after {
+  opacity: 1;
+}
+
+
+// adaptive
+@include r(1219) {
+  .symptoms-foot {
+    width: 360px;
+    height: 360px;
+  }
+  .symptoms-foot__img {
+    width: 260px;
+  }
+  .symptoms-content {
+    justify-content: center;
+  }
+  .symptoms-left {
+    margin-right: 50px;
+  }
+  .symptoms-right {
+    margin-left: 50px;
+  }
+  .symptoms-left, .symptoms-right {
+    width: 195px;
+  }
+  .symptoms-item {
+    width: 195px;
+  }
+  .symptoms-foot-wrap {
+    width: 260px;
+  }
+  .symptoms-item--right::before, .symptoms-item::before {
+    width: 140px;
+  }
+  .symptoms-foot--first {
+    bottom: 34%;
+    left: 220px;
+    &::after {
+    bottom: 14px;
+    right: 3px;
+    width: 254px;
+    height: 132px;
+    }
+}
+  .symptoms-foot--second {
+    bottom: 25%;
+    right: 213px;
+    &::after {
+      width: 160px;
+      height: 88px;
+    }
+}
+.symptoms-foot--third {
+  top: 15%;
+  right: 150px;
+  &::after {
+    bottom: -182px;
+    right: 3px;
+    width: 223px;
+    height: 175px;
+  }
+}
+.symptoms-foot--fourth {
+  top: 45%;
+  left: 120px;
+  &::after {
+    bottom: 14px;
+    right: -249px;
+    width: 253px;
+    height: 77px;
+  }
+}
+.symptoms-foot--fifth {
+  top: 33%;
+  right: 123px;
+  &::after {
+    bottom: -30px;
+    right: -153px;
+    width: 157px;
+    height: 23px;
+  }
+}
+.symptoms-foot--sixth {
+  top: 28%;
+  left: 117px;
+  &::after {
+    bottom: -135px;
+    right: -252px;
+    width: 256px;
+    height: 128px;
+  }
+}
+}
