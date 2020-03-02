@@ -126,6 +126,7 @@ button {
   background-image: linear-gradient(to right, #3fc4c0 0%, #3fc4c0 51%, #3fc4c0 100%);
 
   &__note {
+    margin-top: -5px;
     font-size: 20px;
     font-weight: 500;
   }
