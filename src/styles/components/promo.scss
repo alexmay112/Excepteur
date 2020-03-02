@@ -128,7 +128,6 @@
   font-weight: 600;
 }
 
-
 .bullets__thanks {
   display: inline-block;
   color: #5a5a5a;
@@ -169,23 +168,53 @@
 
 .form {
   text-align: center;
+  background-color: #fff;
+  border-radius: 10px;
+  border: 4px solid #ec1457;
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.05);
+  position: relative;
+  z-index: 5;
+}
+
+.form__top {
+  padding: 15px 24px 23px;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+  position: relative;
 }
 
 .form__title {
-  max-width: 192px;
+  max-width: 195px;
   margin: 0 auto;
-  font-size: 23px;
+  font-size: 24px;
+  line-height: 1.1;
   font-weight: 500;
 
   .green-text {
     display: block;
-    font-size: 24px;
+    font-size: 23px;
   }
 }
 
 .form__price {
-  margin: 15px 0;
+  margin: 7px 0 16px;
+  padding: 0 10px 12px;
   display: flex;
+  border-bottom: 1px solid #d1d0d0;
+  position: relative;
+}
+
+.form__price::before {
+  content: "";
+  position: absolute;
+  bottom: -6px;
+  left: 50%;
+  transform: translateX(-50%) rotate(-45deg);
+  width: 10px;
+  height: 10px;
+  background-color: #ffffff;
+  border-left: 1px solid #d1d0d0;
+  border-bottom: 1px solid #d1d0d0;
 }
 
 .price-old,
@@ -193,12 +222,17 @@
   width: 50%;
 }
 
+.price__title {
+  display: block;
+  margin-bottom: 5px;
+}
+
 .price-old {
   color: #666666;
   border-right: 1px solid #e0dfdd;
 
   .price__count {
-    padding-top: 13px;
+    padding-top: 12px;
     font-size: 28px;
     position: relative;
 
@@ -240,7 +274,7 @@
 
   .price__count {
     font-weight: 900;
-    font-size: 44px;
+    font-size: 40px;
   }
 
   .x_price_current {
@@ -254,14 +288,21 @@
 }
 
 .form__last {
-  margin-bottom: 15px;
+  margin-bottom: 34px;
+  padding: 0 30px;
+  line-height: 1.2;
   color: #000000;
   font-size: 16px;
   font-weight: 500;
 }
 
-input {
-  padding: 23px 23px 23px 52px;
+.form__main {
+  padding: 0 21px;
+}
+
+.form input {
+  width: 100%;
+  padding: 19px 23px 19px 52px;
   border-radius: 5px;
   font-size: 16px;
   line-height: 18px;
@@ -272,4 +313,77 @@ input {
 
 .input-wrap {
   margin-bottom: 15px;
+}
+
+.input-wrap--name,
+.input-wrap--tel {
+  position: relative;
+}
+
+.input-wrap--name::before {
+  content: "";
+  position: absolute;
+  left: 16px;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 24px;
+  height: 24px;
+  background: url("../img/icon-name.png") no-repeat 50%;
+}
+
+.input-wrap--tel::before {
+  content: "";
+  position: absolute;
+  left: 16px;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 24px;
+  height: 24px;
+  background: url("../img/icon-tel.png") no-repeat 50%;
+}
+
+.form__note {
+  margin: 15px 0;
+}
+
+.form__bottom {
+  padding: 15px 10px 15px 40px;
+  font-size: 15px;
+  color: #000000;
+  box-shadow: inset 1px 2px 2px rgba(0, 0, 0, 0.04);
+  background: url("../img/icon-pay.png") no-repeat 25px 50%;
+}
+
+.timer__body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.timer__title {
+  max-width: 190px;
+  margin: 0 auto 12px;
+  font-size: 20px;
+}
+
+.timer__cell {
+  margin-right: 3px;
+  padding: 6px 9px;
+  border-radius: 5px;
+  font-size: 24px;
+  font-weight: 700;
+  border: 2px solid #ec1457;
+
+  &:last-of-type {
+    margin-right: 0;
+  }
+}
+
+.timer__colon {
+  width: 7px;
+  font-weight: 700;
+}
+
+.promo__button {
+  margin-top: 15px;
 }
