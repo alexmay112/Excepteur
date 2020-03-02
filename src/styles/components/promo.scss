@@ -10,6 +10,35 @@
   display: flex;
   align-items: center;
   justify-content: space-between;
+
+  @include r(1219) {
+    max-width: 630px;
+  }
+
+  @include r(1023) {
+    max-width: none;
+  }
+
+  @include r(767) {
+    margin-bottom: 30px;
+    justify-content: center;
+  }
+
+  nav {
+    @include r(767) {
+      display: none;
+    }
+  }
+}
+
+.logo {
+  @include r(1219) {
+    width: 180px;
+  }
+
+  @include r(1023) {
+    width: auto;
+  }
 }
 
 .menu {
@@ -19,7 +48,7 @@
 .menu__item {
   margin-right: 20px;
   padding: 3px 0 3px 38px;
-  background-position: 0 50%;
+  background-position: 4px 50%;
   background-repeat: no-repeat;
   background-size: 30px;
 
@@ -46,24 +75,70 @@
   line-height: 28px;
   border-bottom: 1px solid #d1d1d1;
 
+  @include r(1219) {
+    font-size: 16px;
+  }
+
   &:hover {
     border-bottom: 1px dashed #ec1457;
   }
 }
 
+// .header nav {
+//   @include r(767) {
+//     display: none;
+//   }
+// }
+
 .promo__content {
   display: flex;
   justify-content: flex-end;
+
+  @include r(1023) {
+    flex-wrap: wrap;
+  }
+
+  @include r(639) {
+    flex-direction: column;
+    align-items: center;
+  }
 }
 
 .promo__left {
   position: relative;
+
+  @include r(1023) {
+    display: none;
+  }
 }
 
 .promo__center {
   width: 402px;
   margin-right: 20px;
   position: relative;
+
+  @include r(1219) {
+    width: 330px;
+  }
+
+  @include r(1023) {
+    width: 100%;
+    margin-right: 0;
+  }
+}
+
+.promo__right {
+  @include r(1023) {
+    margin-right: 50px;
+  }
+
+  @include r(767) {
+    margin-right: 20px;
+  }
+
+  @include r(639) {
+    margin-right: 0;
+  }
 }
 
 .promo__slogan {
@@ -72,15 +147,66 @@
   line-height: 48px;
   color: #000;
   font-weight: 900;
+
+  @include r(1219) {
+    font-size: 43px;
+  }
+
+  @include r(1023) {
+    margin-bottom: 30px;
+    text-align: center;
+  }
+
+  @include r(639) {
+    font-size: 38px;
+    line-height: 1.1;
+  }
+
+  @include r(479) {
+    font-size: 35px;
+  }
 }
 
 .bullets {
   padding-left: 63px;
+
+  @include r(1219) {
+    padding-left: 45px;
+  }
+
+  @include r(1023) {
+    margin-bottom: 20px;
+    padding-left: 52px;
+    display: flex;
+    justify-content: space-between;
+  }
+
+  @include r(767) {
+    max-width: 360px;
+    margin: 0 auto 20px;
+    flex-wrap: wrap;
+  }
 }
 
 .bullets__item {
   margin-bottom: 28px;
   position: relative;
+
+  @include r(1219) {
+    margin-bottom: 15px;
+  }
+
+  @include r(1023) {
+    width: 186px;
+  }
+
+  @include r(767) {
+    width: 100%;
+  }
+
+  &:last-of-type {
+    margin-bottom: 0;
+  }
 }
 
 .bullets__check {
@@ -89,6 +215,12 @@
   left: -66px;
   border-radius: 50px;
   background-color: #fff;
+
+  @include r(1023) {
+    top: 50%;
+    transform: translateY(-50%);
+    left: -56px;
+  }
 
   &::before {
     content: "";
@@ -119,6 +251,8 @@
   margin: 5px;
   border-radius: 50px;
   background-color: #3fc4c0;
+
+  @include r(1023) {}
 }
 
 .bullets__text {
@@ -126,6 +260,14 @@
   line-height: 1.4;
   color: #000000;
   font-weight: 600;
+
+  @include r(1023) {
+    font-size: 19px;
+  }
+
+  @include r(639) {
+    font-size: 18px;
+  }
 }
 
 .bullets__thanks {
@@ -133,6 +275,22 @@
   color: #5a5a5a;
   font-size: 18px;
   font-weight: 400;
+
+  @include r(1219) {
+    display: inline;
+  }
+
+  @include r(1023) {
+    font-size: 17px;
+  }
+
+  @include r(767) {
+    display: inline-block;
+  }
+
+  @include r(479) {
+    display: inline;
+  }
 }
 
 .prod {
@@ -140,12 +298,41 @@
   position: absolute;
   left: -450px;
   bottom: -126px;
+
+  @include r(1219) {
+    width: 330px;
+    left: -370px;
+  }
+
+  @include r(1023) {
+    width: 300px;
+    left: 40px;
+    bottom: -370px;
+  }
+
+  @include r(767) {
+    left: 10px;
+  }
+
+  @include r(639) {
+    position: static;
+    margin: 0 auto 20px;
+  }
+
+  @include r(479) {
+    width: 250px;
+  }
 }
 
 .promo__accent {
   margin-top: 8px;
   font-size: 31px;
   font-weight: 500;
+
+  @include r(1219) {
+    margin-top: 0;
+    font-size: 28px;
+  }
 }
 
 .promo__pic {
@@ -164,6 +351,10 @@
 
 .promo__form {
   width: 300px;
+
+  @include r(1219) {
+    width: 270px;
+  }
 }
 
 .form {
@@ -181,6 +372,10 @@
   border-top-left-radius: 10px;
   border-top-right-radius: 10px;
   position: relative;
+
+  @include r(1219) {
+    padding: 15px 16px 23px;
+  }
 }
 
 .form__title {
@@ -373,6 +568,10 @@
   font-size: 24px;
   font-weight: 700;
   border: 2px solid #ec1457;
+
+  @include r(1219) {
+    padding: 6px 8px;
+  }
 
   &:last-of-type {
     margin-right: 0;
