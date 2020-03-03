@@ -1,3 +1,6 @@
+.nowrap {
+  display: none;
+}
 .symptoms {
   // min-height: 845px;
   padding: 50px 0;
@@ -127,15 +130,6 @@
     animation: 2s infinite pulse;
     bottom: 0;
     box-shadow: 0 0 100px rgba(158,130,39,.08);
-    &--animation {
-    display: block;
-    width: inherit;
-    height: inherit;
-    border-radius: 50%;
-    position: absolute;
-    right: -7px;
-    bottom: -7px;
-    }
     }
     // общие стили
     &--first::after,&--second::after,&--third::after,&--fourth::after, &--fifth::after,&--sixth::after {
@@ -546,50 +540,191 @@
 }
 }
 @include r(767) {
+  .nowrap {
+    display: block;
+  }
   .symptoms-content {
     flex-direction: column;
   }
   .symptoms-left , .symptoms-right {
-    width: 620px;
+    width: 600px;
     display: flex;
     flex-direction: row;
+    justify-content: space-evenly;
     align-items: flex-start;
     margin: 0 auto;
-    text-align: center;
   }
   .symptoms-left {
-    display: flex;
-    margin-bottom: 30px;
+    margin-bottom: 0px;
   }
   .symptoms-right {
     margin-top: 30px;
   }
   .symptoms-item {
-    width: 100%;
     display: flex;
     justify-content: center;
-    margin: 0 auto;
-    text-align: center;
+    margin-bottom: 0;
     &::before {
       content: none;
     }
     &:nth-child(2) {
       margin-bottom: 0;
     }
-    &__text::after {
-      right: 0;
-      left: -28px;
+    &-2 {
+      margin-right: 20px;
+    }
+    &__text {
+      text-align: center;
     }
   }
   // .symptoms-br {
   //   display: none;
   // }
-  .symptoms-foot--first::after , .symptoms-foot--second::after , .symptoms-foot--third::after, .symptoms-foot--fourth::after, .symptoms-foot--fifth::after, .symptoms-foot--sixth::before {
+  .symptoms-item__text--right {
+    text-align: center;
+  }
+  .symptoms-foot--first::after , .symptoms-foot--second::after , .symptoms-foot--third::after, .symptoms-foot--fourth::after, .symptoms-foot--fifth::after, .symptoms-foot--sixth::after {
     content: none;
   }
+  .symptoms-item__text::after {
+    top: -10px;
+    left: 50%;
+    transform: translateX(-50%);
+ }
+ .symptoms-foot {
+   width: 460px;
+   height: 460px;
+ }
+ .symptoms-foot__img {
+  bottom: 0px;
+  -webkit-transform: translateX(-52%);
+  transform: translateX(-52.5%);
+  width: 325px;  
+}
+.symptoms-foot--first {
+  bottom: 20%;
+  left: 153px;
+}
+.symptoms-foot--second {
+  bottom: 30%;
+  right: 165px;
+}
+.symptoms-foot--third {
+  top: 16%;
+  right: 199px;
+}
+.symptoms-foot--fourth {
+  top: 46%;
+  left: 150px;
+}
+.symptoms-foot--fifth {
+  top: 35%;
+  left: 273px;
+}
+.symptoms-foot--sixth {
+  top: 29%;
+  left: 152px;
+}
 }
 @include r(639) {
+  .symptoms-left , .symptoms-right {
+    width: 450px;
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    text-align: center;
+  }
+.symptoms-br {
+  display: none;
+}
+}
+@include r(479) {
+  .symptoms-left , .symptoms-right {
+    width: 100%;
+  }
+  .symptoms-foot {
+    width: 400px;
+    height: 400px;
+  }
+  .symptoms-foot__img {
+   width: 285px;  
+ }
+ .symptoms-foot--first {
+  bottom: 19%;
+  left: 134px;
+ }
+ .symptoms-foot--second {
+  bottom: 29%;
+  right: 140px;
+ }
+ .symptoms-foot--third {
+  top: 16%;
+  right: 171px;
+ }
+ .symptoms-foot--fourth {
+  top: 46%;
+  left: 131px;
+ }
+ .symptoms-foot--fifth {
+  top: 34%;
+  left: 238px;
+ }
+ .symptoms-foot--sixth {
+  top: 29%;
+  left: 131px;
+ }
+}
+@include r(420) {
+  .symptoms-left , .symptoms-right {
+   flex-wrap: wrap;
+  }
+  .symptoms-left {
+    margin-bottom: 20px;
+  }
+  .symptoms-right {
+    margin-top: 20px;
+  }
+  .symptoms__title {
+    margin-bottom: 30px;
+  }
   .symptoms-item {
-    justify-content: space-between;
+    width: 100%;
+    &-2 {
+      margin-right: 0;
+    }
+    &__text::after {
+      content: none;
+    }
+  }
+  .symptoms-foot {
+    width: 300px;
+    height: 300px;
+}
+  .symptoms-foot__img {
+    width: 210px;  
+  }
+  .symptoms-foot--first {
+    bottom: 21%;
+    left: 100px
+  }
+  .symptoms-foot--second {
+    bottom: 30%;
+    right: 101px;
+  }
+  .symptoms-foot--third {
+    top: 17%;
+    right: 126px;
+  }
+  .symptoms-foot--fourth {
+    top: 47%;
+    left: 98px;
+  }
+  .symptoms-foot--fifth {
+    top: 35%;
+    left: 175px;
+  }
+  .symptoms-foot--sixth {
+    top: 31%;
+    left: 96px;
   }
 }
