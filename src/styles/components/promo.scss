@@ -39,6 +39,10 @@
   @include r(1023) {
     width: auto;
   }
+
+  @include r(639) {
+    width: 160px;
+  }
 }
 
 .menu {
@@ -183,7 +187,7 @@
 
   @include r(767) {
     max-width: 360px;
-    margin: 0 auto 20px;
+    margin: 0 auto 30px;
     flex-wrap: wrap;
   }
 }

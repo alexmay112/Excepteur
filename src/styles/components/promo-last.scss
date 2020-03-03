@@ -1,3 +1,81 @@
+.promo-last {
+  @include r(1023) {
+    height: 830px;
+  }
+
+  @include r(639) {
+    height: auto;
+  }
+
+  .promo__content {
+    @include r(1023) {
+      max-width: 670px;
+      margin: 0 auto;
+      position: relative;
+    }
+  }
+
+  .bullets {
+    @include r(1023) {
+      display: block;
+      max-width: 370px;
+    }
+
+    @include r(767) {
+      max-width: 340px;
+      margin: 0;
+    }
+    @include r(639) {
+      max-width: 360px;
+      margin: 0 auto 30px;
+    }
+  }
+
+  .bullets__item {
+    @include r(1023) {
+      width: auto;
+    }
+
+    @include r(767) {
+      margin-bottom: 20px;
+    }
+  }
+
+  .bullets__text {
+    @include r(767) {
+      font-size: 17px;
+    }
+  }
+
+  .bullets__thanks {
+    @include r(767) {
+      display: inline;
+    }
+  }
+
+  .promo__right {
+    @include r(1023) {
+      position: absolute;
+      top: 180px;
+    }
+
+    @include r(639) {
+      position: static;
+    }
+  }
+
+  .prod {
+    @include r(1023) {
+      width: 280px;
+    }
+
+    @include r(767) {
+      left: 30px;
+      bottom: -380px;
+    }
+  }
+}
+
 .promo-last__form {
   width: 270px;
 
