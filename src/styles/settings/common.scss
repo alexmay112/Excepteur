@@ -81,6 +81,27 @@ section {
 .subtitle {
   font-size: 24px;
   color: #444444;
+
+  @include r(1219) {
+    font-size: 22px;
+  }
+
+  @include r(1023) {
+    font-size: 21px;
+  }
+
+  @include r(767) {
+    font-size: 20px;
+  }
+
+  @include r(639) {
+    font-size: 19px;
+  }
+
+  @include r(479) {
+    font-size: 18px;
+  }
+
 }
 
 .text-bold {
@@ -144,6 +165,6 @@ section {
 
 .section-bg {
   background-color: #f6f5f1;
-  background: #f6f5f1 url("../img/bg-noise.png") no-repeat 50% 50%;
-  background-size: cover;
+  background: #f6f5f1 url("../img/bg-noise.png") repeat-y 50% 50%;
+  background-size: auto;
 }
