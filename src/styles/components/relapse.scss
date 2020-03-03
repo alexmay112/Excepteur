@@ -1,0 +1,63 @@
+.relapse {
+  min-height: 630px;
+  background-image: url(../img/spotted-bg.png);
+  background-size: cover;
+  padding: 50px 0;
+  &__title {
+    margin-bottom: 52px;
+    text-align: center;
+  }
+  &-content {
+    max-width: 1165px;
+    margin: 0 auto;
+  }
+  &-list {
+    display: flex;
+    justify-content: space-between;
+  }
+  &-item { 
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    &:nth-of-type(even) {
+      align-self: flex-end;
+    }
+    &:nth-of-type(even) &__description {
+      margin-top: 29px;
+    }
+    .relapse-item__img {
+      position: relative;
+      &-circle { 
+        width: 58px;
+        height: 58px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-color: #e64722;
+        border-radius: 50%;
+        position: absolute;
+        top: 0;
+        left: 50%;
+        transform: translateX(-50%);
+        &.odd {
+          width: 58px;
+          height: 58px;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          background-color: #e64722;
+          border-radius: 50%;
+          position: absolute;
+          bottom: 0;
+          left: 50%;
+        }
+      }
+    }
+    &__description {
+      max-width: 249px;
+      font: 500 19px/28px $main-font;
+      text-align: center;
+      margin-top: 59px;
+    }
+  }
+}
