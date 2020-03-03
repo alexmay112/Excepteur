@@ -19,6 +19,10 @@ button {
   padding: 0;
 }
 
+section {
+  position: relative;
+}
+
 .container {
   max-width: 1220px;
   margin: 0 auto;
@@ -47,6 +51,7 @@ button {
 }
 
 .title {
+  text-align: center;
   font-size: 47px;
   font-weight: 900;
   color: #000000;
@@ -139,4 +144,6 @@ button {
 
 .section-bg {
   background-color: #f6f5f1;
+  background: #f6f5f1 url("../img/bg-noise.png") no-repeat 50% 50%;
+  background-size: cover;
 }
