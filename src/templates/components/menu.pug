@@ -1,0 +1,32 @@
+nav.menu
+    .container
+        button.menu__button(type="button")
+            span.menu__line
+    .menu__overlay
+    .menu__wrapper
+        a(href="#home")
+            img.menu__logo(src="img/logo.png", alt="Varilif")
+        button.menu__close(type="button")
+        .menu__body
+            nav
+                ul.menu.menu--mob
+                    li.menu__item
+                        a.menu__link(href='#reviews') Отзывы
+                    li.menu__item
+                        a.menu__link(href='#components') Состав
+                    li.menu__item
+                        a.menu__link(href='#order') Оплата и&nbsp;доставка
+            .timer.menu__timer
+                .timer__wrap
+                    .timer__title Осталось до конца 
+                        span.green-text акции
+                    .timer__body
+                        .timer__cell.hours 0
+                        .timer__cell.hours 0
+                        .timer__colon
+                        .timer__cell.minutes 27
+                        .timer__cell.minutes 27
+                        .timer__colon
+                        .timer__cell.seconds 0
+                        .timer__cell.seconds 0
+            button.form__button.btn.menu__btn.ever-popup-btn Заказать
