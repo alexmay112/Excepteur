@@ -21,6 +21,7 @@
     flex-direction: column;
     &:nth-of-type(even) {
       align-self: flex-end;
+      margin-bottom: -2px;
     }
     &:nth-of-type(even) &__description {
       margin-top: 29px;
@@ -33,7 +34,7 @@
         background-color: #e64722;
         border-radius: 50%;
         position: absolute;
-        left: 50%;
+        left: 49%;
         transform: translateX(-50%);
         &::after {
           content: '';
@@ -46,18 +47,18 @@
           transform: translate(-50%, -50%);
         }
         &.even {
-          top: -32px;
+          top: -26px;
         }
         &.odd {
-          bottom: -26px;
+          bottom: -23px;
         }
       }
     }
     &__description {
-      max-width: 249px;
+      max-width: 263px;
       font: 500 19px/28px $main-font;
       text-align: center;
-      margin-top: 59px;
+      margin-top: 51px;
     }
   }
 }
@@ -110,7 +111,7 @@
         }
         &.even {
           top: auto!important;
-          bottom: -26px;
+          bottom: -22px;
         }
         &.odd {
           top: auto!important;
@@ -124,6 +125,9 @@
   .relapse { 
     &-item { 
       width: 45%;
+      &:nth-of-type(even) {
+       align-self: flex-start;
+      }
     }
   }
 }
@@ -140,7 +144,7 @@
       &__description { 
         font-size: 20px;
       }
-      &:nth-child(3), &:nth-child(4) {
+      &:nth-child(2), &:nth-child(3), &:nth-child(4) {
         margin-bottom: 35px;
       }
       &:last-child {
