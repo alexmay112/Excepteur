@@ -12,7 +12,14 @@
 @import "components/healing";
 @import "components/use";
 @import "components/expert";
+<<<<<<< HEAD
+=======
+@import "components/components";
+@import "components/reviews";
+@import "components/order";
+>>>>>>> 1d306521cbcc3a73c50316df95cfbb71dc298bee
 @import "components/promo-last";
+@import "components/footer";
 
 // паддинг секций (импортируем последним для правильного каскадирования стилей)
 @import "settings/padding";

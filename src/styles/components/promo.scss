@@ -1,6 +1,22 @@
 .promo {
   padding: 80px 0 90px;
   background-color: #f6f5f1;
+  position: relative;
+
+  &:after {
+    content: "";
+    height: 81px;
+    width: 100%;
+    position: absolute;
+    background: url("../img/1.png");
+    bottom: -30px;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 20;
+    @include r(1023) {
+      display: none;
+    }
+  }
 }
 
 .header {
@@ -295,8 +311,9 @@
 .prod {
   width: 431px;
   position: absolute;
-  left: -450px;
-  bottom: -126px;
+  left: -410px;
+  bottom: -154px;
+  z-index: 30;
 
   @include r(1219) {
     width: 330px;
@@ -339,6 +356,7 @@
   position: absolute;
   top: -173px;
   left: calc(50% - 620px);
+  z-index: 25;
 }
 
 .promo__decor {
@@ -584,4 +602,50 @@
 
 .promo__button {
   margin-top: 15px;
+}
+
+.white-block {
+  position: relative;
+
+  &:before {
+    content: "";
+    height: 81px;
+    width: 100%;
+    position: absolute;
+    background: url("../img/1.png");
+    top: -50px;
+    left: 50%;
+    transform: translateX(-50%);
+
+    @include r(1023) {
+      display: none;
+    }
+  }
+
+  &:after {
+    content: "";
+    height: 81px;
+    width: 100%;
+    position: absolute;
+    background: url("../img/2.png");
+    bottom: -50px;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 30;
+    @include r(1023) {
+      display: none;
+    }
+  }
+}
+
+.reviews.white-block {
+  &:after {
+    display: none;
+  }
+}
+
+.order.white-block {
+  &:before {
+    display: none;
+  }
 }
