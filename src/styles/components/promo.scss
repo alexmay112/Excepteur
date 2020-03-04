@@ -297,6 +297,7 @@
   position: absolute;
   left: -450px;
   bottom: -126px;
+  z-index: 20;
 
   @include r(1219) {
     width: 330px;
@@ -339,6 +340,7 @@
   position: absolute;
   top: -173px;
   left: calc(50% - 620px);
+  z-index: 10;
 }
 
 .promo__decor {
