@@ -1,6 +1,6 @@
 .promo-last {
   @include r(1023) {
-    height: 830px;
+    height: 860px;
   }
 
   @include r(639) {
@@ -25,6 +25,7 @@
       max-width: 340px;
       margin: 0;
     }
+
     @include r(639) {
       max-width: 360px;
       margin: 0 auto 30px;
@@ -53,10 +54,23 @@
     }
   }
 
+  .promo__decor {
+    top: 0;
+  }
+
+  .promo__center {
+    margin-right: 50px;
+    padding-top: 45px;
+
+    @include r(1219) {
+      margin-right: 20px;
+    }
+  }
+
   .promo__right {
     @include r(1023) {
       position: absolute;
-      top: 180px;
+      top: 220px;
     }
 
     @include r(639) {
@@ -64,9 +78,22 @@
     }
   }
 
+  .promo__pic {
+    top: -110px;
+  }
+
   .prod {
+    bottom: -124px;
+    left: -408px;
+
+    @include r(1219) {
+      left: -368px;
+    }
+
     @include r(1023) {
       width: 280px;
+      left: 30px;
+      bottom: -370px;
     }
 
     @include r(767) {
