@@ -1,0 +1,35 @@
+.reviews {
+  padding: 90px 0;
+}
+
+.slider-circle {
+  width: 41px;
+  height: 41px;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  background-color: $red;
+  cursor: pointer;
+  z-index: 10;
+}
+
+.slider__arrow--left {
+  transform: scale(-1);
+}
+
+.slider-circle--left {
+  left: -42px;
+}
+
+.slider-circle--right {
+  right: -42px;
+}
+
+.review__desc {
+  max-height: 80px;
+  overflow: hidden;
+}

@@ -19,6 +19,10 @@ button {
   padding: 0;
 }
 
+section {
+  position: relative;
+}
+
 .container {
   max-width: 1220px;
   margin: 0 auto;
@@ -29,16 +33,16 @@ button {
   }
 
   @include r(1023) {
-    max-width: 768px;
+    width: 768px;
     padding: 0 10px;
   }
 
   @include r(767) {
-    max-width: 640px;
+    width: 640px;
   }
 
   @include r(639) {
-    max-width: 480px;
+    width: 480px;
   }
 
   @include r(479) {
@@ -47,6 +51,7 @@ button {
 }
 
 .title {
+  text-align: center;
   font-size: 47px;
   font-weight: 900;
   color: #000000;
@@ -76,6 +81,27 @@ button {
 .subtitle {
   font-size: 24px;
   color: #444444;
+
+  @include r(1219) {
+    font-size: 22px;
+  }
+
+  @include r(1023) {
+    font-size: 21px;
+  }
+
+  @include r(767) {
+    font-size: 20px;
+  }
+
+  @include r(639) {
+    font-size: 19px;
+  }
+
+  @include r(479) {
+    font-size: 18px;
+  }
+
 }
 
 .text-bold {
@@ -139,4 +165,6 @@ button {
 
 .section-bg {
   background-color: #f6f5f1;
+  background: #f6f5f1 url("../img/bg-noise.png") repeat-y 50% 50%;
+  background-size: auto;
 }
