@@ -26,7 +26,7 @@ $('.symptoms-item-5').on('click mouseover', function () {
 	$('.symptoms-content').removeClass('active1 active2 active3 active4 active6');
 	$('.symptoms-content').addClass('active5');
 });
-// волдыри
+// трещины на коже
 $('.symptoms-item-6').on('click mouseover', function () {
 	$('.symptoms-content').removeClass('active1 active2 active3 active4 active5');
 	$('.symptoms-content').addClass('active6');

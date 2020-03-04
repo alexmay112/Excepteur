@@ -1,19 +1,15 @@
-.healing {
+.use {
   // min-height: 772px;
   padding: 50px 0;
   &__title { 
-    margin-bottom: 22px;
-    text-align: center;
-  }
-  &__subtitle { 
-    margin-bottom: 56px;
+    margin-bottom: 72px;
     text-align: center;
   }
   &-list {
     max-width: 1030px;
     display: flex;
     justify-content: space-between;
-    margin: 0 auto 45px auto;
+    margin: 0 auto 43px auto;
   }
   &-item {
     display: flex;
@@ -23,15 +19,15 @@
       margin-top: 30px;
     }
     &__description { 
-      max-width: 217px;
+      max-width: 295px;
       font: 500 22px/28px $main-font;
       text-align: center;
-      margin-top: 57px;
+      margin-top: 55px;
     }
     &__img { 
       position: relative;
       &::before , &::after {
-        background-color: #e64722;
+        background-color: #3fc4c0;
         position: absolute;
         left: 50%;
         transform: translateX(-50%); 
@@ -79,26 +75,15 @@
       }
     }
   }
-  &-lower {
-    max-width: 622px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    margin: 0 auto;
-    &__title {
-      font: 500 26px/22px $main-font;
-      text-align: center;
-      margin-bottom: 40px;
-    }
-    &__btn { 
-      width: 242px;
-      height: 55px;
-    }
+  &__reference {
+    font: 400 18px/28px $main-font;
+    color: #444444;
+    text-align: center;
   }
 }
 
 @include r(1219) {
-  .healing { 
+  .use { 
     &-list { 
       max-width: 100%;
     }
@@ -109,7 +94,7 @@
 }
 
 @include r(1023) {
-  .healing { 
+  .use { 
     &-item { 
       width: 30%;
      &:nth-child(2) {
@@ -136,13 +121,17 @@
        margin-top: 45px;
      }
     }
-    &-lower__title {
-      margin-bottom: 30px;
-    }
   }
 }
+@include r(767) {
+  .use { 
+    &-list {
+      margin-bottom: 40px;
+    }
+} 
+}
 @include r(639) {
-  .healing { 
+  .use { 
     &-list {
       flex-wrap: wrap;
       justify-content: space-around;
@@ -150,17 +139,23 @@
     &-item { 
       width: 45%;
       &:nth-child(1) , &:nth-child(2) {
-        margin-bottom: 45px;
+        margin-bottom: 50px;
+      }
+      &:last-child {
+        width: 50%;
       }
     }
-    &-br {
-      display: none;
-    }
+  }
+  &-br {
+    display: none;
   }
 }
 
 @include r(479) {
-  .healing { 
+  .use { 
+    &__title {
+      margin-bottom: 56px;
+    }
     &-list {
       flex-wrap: wrap;
       justify-content: space-around;
@@ -169,23 +164,15 @@
       width: 100%;
       margin-bottom: 50px;
       &:last-child {
+        width: 100%;
         margin-bottom: 0;
       }
       &__description {
         font-size: 20px;
       }
     }
-    &-lower { 
-      &__title {
-        font-size: 22px;
-      }
+    &__reference {
       margin-top: -20px;
     }
-  }
-}
-
-@include r(370) {
-  .healing-br--hidden {
-    display: block;
   }
 }
