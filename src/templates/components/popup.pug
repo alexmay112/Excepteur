@@ -1,0 +1,35 @@
+.ever-popup-build
+    .my-popup(id="cloneThis")
+        .popup__wrap
+            .popup__left
+                .prod.popup__prod
+                    img(src="img/prod.png", alt="Stop Active")
+            .popup__right
+                .form.promo__form.promo-last__form
+                    .form__top
+                        p.form__title Успейте заказать со скидкой 
+                            span.green-text.nowrap до 
+                                span.date-0
+                        .form__price.price
+                            .price-old
+                                span.price__title Старая цена
+                                .price__count                                
+                                    span.x_price_previous 9999
+                                    span.x_currency грн.
+                            .price-new
+                                span.price__title Новая цена
+                                .price__count
+                                    span.x_price_current.green-text 999
+                                    span.x_currency грн.
+                        p.form__last Осталось упаковок со&nbsp;скидкой: 
+                            span.lastpack.green-text 15
+                    form.x_order_form.form__main(action="/submit" method="post")
+                        .input-wrap.input-wrap--name
+                            input.form__input(type="text" name="name" placeholder="Мое имя" required)
+                        .input-wrap.input-wrap--tel
+                            input.form__input(type="tel" name="phone" placeholder="Мой телефон" required)
+                        button.form__button.btn Заказать
+                            p.btn__note со скидкой
+                        p.form__note *при заказе курса
+                    p.form__bottom Оплата после получения
+
