@@ -1,3 +1,12 @@
+#components {
+  position: absolute;
+  top: 25px;
+
+  @include r(1023) {
+    top: 0;
+  }
+}
+
 .components {
   padding: 90px 0;
 }
@@ -15,6 +24,7 @@
   position: absolute;
   top: 36px;
   left: 76px;
+  z-index: 5;
 
   @include r(1219) {
     left: 30px;
@@ -59,6 +69,12 @@
 .components__item {
   max-width: 270px;
   margin-top: 136px;
+  position: relative;
+
+  &::before {
+    content: "";
+    position: absolute;
+  }
 
   @include r(1219) {
     max-width: 250px;
@@ -94,6 +110,25 @@
   }
 
   &:nth-child(1) {
+    &:before {
+      left: -73px;
+      top: 231px;
+      width: 88px;
+      height: 99px;
+      background: url(../img/comp-arrow.png) no-repeat;
+      background-position: 100% 0;
+      transform: rotate(-45deg);
+
+      @include r(1219) {
+        left: -62px;
+        top: 220px;
+      }
+
+      @include r(1023) {
+        display: none;
+      }
+    }
+
     .components__img img {
       left: -8px;
       top: -11px;
@@ -105,6 +140,23 @@
   }
 
   &:nth-child(2) {
+    &:before {
+      left: -240px;
+      top: 70px;
+      width: 158px;
+      height: 99px;
+      background: url(../img/comp-arrow.png) no-repeat;
+      background-position: 100% 0;
+
+      @include r(1219) {
+        left: -220px;
+      }
+
+      @include r(1023) {
+        display: none;
+      }
+    }
+
     @include r(767) {
       order: 1;
       margin-right: 0;
@@ -136,6 +188,26 @@
 
   &:nth-child(3) {
     margin-top: 107px;
+
+    &:before {
+      left: -90px;
+      top: -70px;
+      width: 158px;
+      height: 99px;
+      background: url(../img/comp-arrow.png) no-repeat;
+      background-position: 100% 0;
+      transform: rotate(50deg);
+
+      @include r(1219) {
+        width: 90px;
+        left: -55px;
+        top: -50px;
+      }
+
+      @include r(1023) {
+        display: none;
+      }
+    }
 
     @include r(1023) {
       margin-top: 0;
