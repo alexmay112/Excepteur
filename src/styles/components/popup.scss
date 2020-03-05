@@ -1,15 +1,65 @@
 .my-popup {
   .prod {
+    width: auto;
     position: relative;
     top: 0;
     left: 0;
   }
 }
 
-
 .popup__wrap {
-  padding: 50px;
+  padding: 63px 69px 52px;
   display: flex;
   align-items: center;
+  border-radius: 5px;
   background-color: #f6f5f1;
+
+  @include r(999) {
+    padding: 0;
+    background-color: transparent;
+  }
+}
+
+.popup__left {
+  margin-right: 70px;
+
+  @include r(999) {
+    display: none;
+  }
+}
+
+.ever-popup__close {
+  right: 15px !important;
+  top: 20px !important;
+
+  @include r(999) {
+    top: -30px !important;
+    right: 0px !important;
+  }
+}
+
+.ever-popup__close:after,
+.ever-popup__close:before {
+  width: 30px !important;
+  height: 3px !important;
+  background-color: $red !important;
+
+}
+
+.ever-popup.show {
+  display: flex !important;
+  align-items: center;
+
+  @media (max-height: 730px) {
+    display: block !important;
+  }
+}
+
+.ever-popup__inner {
+  margin: 0 auto !important;
+  padding-top: 0 !important;
+
+  @media (max-height: 730px) {
+    margin-top: 60px !important;
+  }
 }
