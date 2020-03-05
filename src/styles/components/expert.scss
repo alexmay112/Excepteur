@@ -1,11 +1,23 @@
 .expert  {
-  // min-height: 1083px;
-  background-image: url(../img/bg-noise.png);
-  background-size: cover;
-  background-position: center;
-  padding: 50px 0;
+  padding: 90px 0 0 0;
+  position: relative;
+  &:after {
+    content: "";
+    height: 81px;
+    width: 100%;
+    position: absolute;
+    background: url(../img/1.png);
+    bottom: -1px;
+    left: 50%;
+    -webkit-transform: translateX(-50%);
+    transform: translateX(-50%);
+    z-index: 20;
+  }
+    @include r(1023) {
+      display: none;
+    }
   &__title { 
-    margin-bottom: 48px;
+    margin-bottom: 40px;
     text-align: center;
   }
   &-content { 
@@ -24,7 +36,7 @@
     }
   }
   &__img {
-    margin-left: 35px;
+    margin-left: 26px;
     position: relative;
     z-index: 2;
   }
@@ -35,7 +47,7 @@
     &__description {
       font: 400 18px/28px $main-font;
       color: #444444;
-      margin-bottom: 31px;
+      margin-bottom: 29px;
       &-bold { 
         font-weight: 700;
         color: #000000;
@@ -43,19 +55,16 @@
     }
   }
   &-author {
-    max-width: 203px;
     text-align: left;
-    line-height: 24px;
     &__name { 
       color: #1d1d1d;
       font-size: 24px;
-      line-height: 24px;
+      line-height: 32px;
     }
     &__desc { 
+      font: 500 18px/24px $main-font;
       color: #444444;
       font-style: italic;
-      line-height: 24px;
-      font-weight: 500;
     }
   }
   &-lower {
@@ -65,8 +74,8 @@
   }
   &__btn {
     width: 242px;
-    height: 55px;
-    margin-top: -20px;
+    height: 60px;
+    margin-top: -38px;
     z-index: 2;
   }
 }

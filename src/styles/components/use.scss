@@ -1,6 +1,5 @@
 .use {
-  // min-height: 772px;
-  padding: 50px 0;
+  padding: 90px 0;
   &__title { 
     margin-bottom: 72px;
     text-align: center;
@@ -22,7 +21,7 @@
       max-width: 295px;
       font: 500 22px/28px $main-font;
       text-align: center;
-      margin-top: 55px;
+      margin-top: 51px;
     }
     &__img { 
       position: relative;
@@ -76,7 +75,7 @@
     }
   }
   &__reference {
-    font: 400 18px/28px $main-font;
+    font: 300 18px/7px $main-font;
     color: #444444;
     text-align: center;
   }
@@ -120,6 +119,9 @@
        line-height: 22px;
        margin-top: 45px;
      }
+    }
+    &__reference {
+      line-height: 20px;
     }
   }
 }
