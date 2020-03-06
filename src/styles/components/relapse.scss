@@ -168,3 +168,16 @@
     bottom: -22px!important;
   }
 }
+@-moz-document url-prefix() {
+   .desc2 , .desc4  {
+    line-height: 20px;
+    margin-bottom: 10px;
+  }
+  .desc1 , .desc3 {
+    align-self: auto;
+    margin-top: 33px;
+  }
+  .desc3 {
+    line-height: 22px;
+  }
+}

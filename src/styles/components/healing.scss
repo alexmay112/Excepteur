@@ -188,3 +188,8 @@
     display: block;
   }
 }
+@-moz-document url-prefix() {
+  .healing-item__description.desc {
+    line-height: 20px;
+  }
+}
