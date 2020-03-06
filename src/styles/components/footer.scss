@@ -1,43 +1,11 @@
 .footer {
   padding: 50px 0 30px;
-  @include r(1023) {
-    padding: 30px 0;
-  }
-}
-
-.footer__content {
-  text-align: center;
-}
-
-.footer__logo {
-  margin-bottom: 15px;
 
   @include r(1023) {
-    display: none;
+    padding: 20px 0;
   }
 }
 
-.footer__img {
-  margin: 0 auto;
-}
-
-.footer__link {
-  text-decoration: underline;
-  font-size: 16px;
-  color: #444444;
-
-  &:hover {
-    text-decoration: none;
-  }
-}
-
-.footer__label {
-  margin-top: 15px;
-  font-size: 18px;
-  font-weight: 500;
-
-  @include r(1023) {
-    display: none;
-  }
-
+.create_rom_footer {
+  line-height: 1.5 !important;
 }

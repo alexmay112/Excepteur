@@ -1,14 +1,35 @@
 .my-popup {
   .prod {
-    width: auto;
+    width: 340px;
+    margin: 0 auto;
     position: relative;
     top: 0;
     left: 0;
   }
+
+  .price__title {
+    margin: 0;
+  }
+
+  .promo-last__form .form__last {
+    margin-bottom: 28px;
+  }
+
+  .promo-last__form .form__note {
+    margin: 10px 0;
+  }
+
+  .promo-last__form .form__bottom {
+    padding: 10px 10px 10px 40px;
+  }
+
+  .logo__img {
+    margin-bottom: 30px;
+  }
 }
 
 .popup__wrap {
-  padding: 63px 69px 52px;
+  padding: 40px 60px;
   display: flex;
   align-items: center;
   border-radius: 5px;

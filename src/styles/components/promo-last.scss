@@ -111,6 +111,10 @@
 .promo-last__form {
   width: 270px;
 
+  @include r(1219) {
+    margin-top: 0;
+  }
+
   .form__top {
     padding: 15px 0 0;
     background-color: #f6f5f1;
@@ -128,7 +132,7 @@
   }
 
   .form__title {
-    max-width: 192px;
+    max-width: 195px;
     margin: 0 auto;
     font-size: 23px;
     line-height: 1.1;

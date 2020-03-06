@@ -241,6 +241,10 @@
   width: 100%;
   bottom: 8px;
 
+  @include r(1023) {
+    bottom: 0;
+  }
+
   &::before {
     content: "";
     width: 10px;
@@ -252,5 +256,9 @@
     transform: translateX(-50%) rotate(-45deg);
     bottom: -6px;
     background-color: #fff;
+
+    @include r(1023) {
+      display: none;
+    }
   }
 }
