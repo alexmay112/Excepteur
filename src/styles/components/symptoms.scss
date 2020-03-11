@@ -22,12 +22,12 @@
     margin-bottom: 69px;
   }
   &-item { 
-    margin-bottom: 40px;
+    margin-bottom: 48px;
     margin-right: 31px;
     cursor: pointer;
     position: relative;
     &:nth-child(2) {
-      margin-bottom: 51px;
+      margin-bottom: 45px;
     }
     &:nth-child(3) {
       margin-bottom: 0;
@@ -36,10 +36,10 @@
       }
     }
     &-4 {
-      margin-bottom: 48px!important;
+      margin-bottom: 45px!important;
     }
     &-5 {
-      margin-bottom: 43px!important;
+      margin-bottom: 45px!important;
     }
     &::before {
       content: '';
@@ -47,7 +47,7 @@
       height: 1px;
       background-color: #e8e8e8;
       position: absolute;
-      bottom: -23px;
+      bottom: -24px;
       right: 0px;
     }
     // правые айтемсы 
@@ -59,7 +59,7 @@
         height: 1px;
         background-color: #e8e8e8;
         position: absolute;
-        bottom: -18px;
+        bottom: -23px;
         left: 0px;
       }
     }
@@ -143,9 +143,9 @@
         bottom: 14px;
         right: 3px;
         width: 277px;
-        height: 247px;
-      border-top: 1px solid #a2a2a2;
-      border-right: 1px solid #a2a2a2;
+        height: 240px;
+        border-top: 1px solid #a2a2a2;
+        border-right: 1px solid #a2a2a2;
       }
     }
     // запах
@@ -156,7 +156,7 @@
       bottom: 14px;
       right: 3px;
       width: 431px;
-      height: 128px;
+      height: 117px;
       border-top: 1px solid #a2a2a2;
       border-right: 1px solid #a2a2a2;
       }
@@ -166,12 +166,12 @@
       top: 17.5%;
       right: 251px;
       &::after {
-        bottom: -195px;
-        right: 3px;
-        width: 380px;
-        height: 188px;
-        border-bottom: 1px solid #a2a2a2;
-        border-right: 1px solid #a2a2a2;
+        bottom: -196px;
+      right: 3px;
+      width: 380px;
+      height: 189px;
+      border-bottom: 1px solid #a2a2a2;
+      border-right: 1px solid #a2a2a2;
       }
     }
     // шелушение
@@ -182,7 +182,7 @@
         bottom: 14px;
         right: -435px;
         width: 439px;
-        height: 114px;
+        height: 105px;
         border-top: 1px solid #a2a2a2;
         border-left: 1px solid #a2a2a2;
       }
@@ -191,10 +191,10 @@
     top: 35.3%;
     right: 212px;
     &::after {
-      bottom: -23px;
+      bottom: -25px;
       right: -284px;
       width: 288px;
-      height: 16px;
+      height: 18px;
       border-bottom: 1px solid #a2a2a2;
       border-left: 1px solid #a2a2a2;
     }
@@ -398,7 +398,7 @@
       bottom: 14px;
       right: 3px;
       width: 285px;
-      height: 161px;
+      height: 154px;
     }
 }
   .symptoms-foot--second {
@@ -406,17 +406,17 @@
     right: 213px;
     &::after {
       width: 191px;
-      height: 125px;
+      height: 114px;
     }
 }
 .symptoms-foot--third {
   top: 15%;
   right: 150px;
   &::after {
-    bottom: -136px;
+    bottom: -137px;
     right: 3px;
     width: 254px;
-    height: 129px;
+    height: 130px;
   }
 }
 .symptoms-foot--fourth {
@@ -426,14 +426,14 @@
     bottom: 14px;
     right: -273px;
     width: 277px;
-    height: 106px;
+    height: 98px;
   }
 }
 .symptoms-foot--fifth {
   top: 33.6%;
   right: 123px;
   &::after {
-    bottom: 2px;
+    bottom: 1px;
     right: -177px;
     width: 170px;
     height: 0;
@@ -443,10 +443,10 @@
   top: 28%;
   left: 117px;
   &::after {
-    bottom: -89px;
+    bottom: -88px;
     right: -276px;
     width: 280px;
-    height: 82px;
+    height: 81px;
   }
 }
 }
@@ -483,7 +483,7 @@
     bottom: 14px;
     right: 3px;
     width: 160px;
-    height: 187px;
+    height: 180px;
   }
 }
 .symptoms-foot--second {
@@ -491,17 +491,17 @@
   right: 122px;
   &::after {
     width: 272px;
-    height: 81px;
+    height: 70px;
   }
 }
 .symptoms-foot--third {
   top: 14%;
   right: 160px;
 &::after {
-  bottom: -177px;
+  bottom: -178px;
   right: 3px;
   width: 234px;
-  height: 170px;
+  height: 171px;
 }
 }
 .symptoms-foot--fourth {
@@ -509,29 +509,29 @@
   left: 120px;
 &::after {
   bottom: 14px;
-  right: -264px;
-  width: 268px;
-  height: 72px;
+  right: -263px;
+  width: 267px;
+  height: 63px;
 }
 }
 .symptoms-foot--fifth {
   top: 32%;
   left: 227px;
 &::after {
-  bottom: -37px;
+  bottom: -38px;
   right: -157px;
   width: 161px;
-  height: 30px;
+  height: 31px;
 }
 }
 .symptoms-foot--sixth {
   top: 26%;
   left: 120px;
 &::after {
-  bottom: -131px;
+  bottom: -130px;
   right: -264px;
   width: 268px;
-  height: 124px;
+  height: 123px;
 }
 .symptoms__title {
   margin-bottom: 45px;
@@ -735,4 +735,87 @@
       margin-bottom: 0!important;
     }
   }
+}
+
+// стили для мозилы
+@-moz-document url-prefix()
+{
+    .symptoms-foot {
+      &--first { 
+        bottom: 24.7%;
+        left: 195px;
+        &::after {
+          bottom: 14px;
+          right: 3px;
+          width: 277px;
+          height: 244px;
+          border-top: 1px solid #a2a2a2;
+          border-right: 1px solid #a2a2a2;
+        }
+      }
+      // запах
+      &--second {
+        bottom: 33.6%;
+        right: 200px;
+        &::after {
+        bottom: 14px;
+        right: 3px;
+        width: 431px;
+        height: 121px;
+        border-top: 1px solid #a2a2a2;
+        border-right: 1px solid #a2a2a2;
+        }
+      }
+      // деформация ногтя
+      &--third {
+        top: 17.5%;
+        right: 251px;
+        &::after {
+          bottom: -193px;
+          right: 3px;
+          width: 380px;
+          height: 186px;
+          border-bottom: 1px solid #a2a2a2;
+          border-right: 1px solid  #a2a2a2;
+        }
+      }
+      // шелушение
+      &--fourth {
+        top: 48.3%;
+        left: 186px;
+        &::after {
+          bottom: 14px;
+          right: -435px;
+          width: 439px;
+          height: 110px;
+          border-top: 1px solid #a2a2a2;
+          border-left: 1px solid #a2a2a2;
+        }
+    }
+    &--fifth {
+      top: 35.3%;
+      right: 212px;
+      &::after {
+        bottom: -20px;
+        right: -284px;
+        width: 288px;
+        height: 13px;
+        border-bottom: 1px solid #a2a2a2;
+        border-left: 1px solid #a2a2a2;
+      }
+  }
+  // волдыри
+    &--sixth {
+      top: 30.6%;
+      left: 189px;
+      &::after {
+        bottom: -116px;
+        right: -432px;
+        width: 436px;
+        height: 109px;
+        border-bottom: 1px solid #a2a2a2;
+        border-left: 1px solid #a2a2a2;
+      }
+  }
+    }
 }
