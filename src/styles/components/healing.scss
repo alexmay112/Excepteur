@@ -94,6 +94,9 @@
       height: 55px;
     }
   }
+  &-br { 
+    line-height: 1;
+  }
 }
 
 @include r(1219) {
@@ -195,8 +198,8 @@
     display: block;
   }
 }
-@-moz-document url-prefix() {
-  .healing-item__description.desc {
-    line-height: 20px;
-  }
-}
+// @-moz-document url-prefix() {
+//   .healing-item__description.desc {
+//     line-height: 20px;
+//   }
+// }

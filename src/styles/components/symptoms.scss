@@ -221,6 +221,89 @@
     margin-bottom: 69px;
     margin-right: -5px;
   }
+  &-br {
+    line-height: 1;
+  }
+  @media screen and (-ms-high-contrast: active), (-ms-high-contrast: none) {  
+    .symptoms-foot {
+      &--first { 
+        bottom: 24.7%;
+        left: 195px;
+        &::after {
+          bottom: 14px;
+          right: 3px;
+          width: 278px;
+          height: 241px;
+          border-top: 1px solid  #a2a2a2;
+          border-right: 1px solid  #a2a2a2;
+        }
+      }
+      // запах
+      &--second {
+        bottom: 33.6%;
+        right: 200px;
+        &::after {
+        bottom: 14px;
+        right: 3px;
+        width: 432px;
+        height: 118px;
+        border-top: 1px solid #a2a2a2;
+        border-right: 1px solid #a2a2a2;
+        }
+      }
+      // деформация ногтя
+      &--third {
+        top: 17.5%;
+        right: 251px;
+        &::after {
+          bottom: -196px;
+          right: 3px;
+          width: 381px;
+          height: 190px;
+          border-bottom: 1px solid #a2a2a2;
+          border-right: 1px solid  #a2a2a2;
+        }
+      }
+      // шелушение
+      &--fourth {
+        top: 48.3%;
+        left: 186px;
+        &::after {
+          bottom: 14px;
+          right: -434px;
+          width: 438px;
+          height: 106px;
+          border-top: 1px solid #a2a2a2;
+          border-left: 1px solid #a2a2a2;
+        }
+    }
+    &--fifth {
+      top: 35.3%;
+      right: 212px;
+      &::after {
+        bottom: -24px;
+        right: -284px;
+        width: 288px;
+        height: 17px;
+        border-bottom: 1px solid #a2a2a2;
+        border-left: 1px solid #a2a2a2;
+      }
+  }
+  // волдыри
+    &--sixth {
+      top: 30.6%;
+      left: 189px;
+      &::after {
+        bottom: -120px;
+        right: -432px;
+        width: 436px;
+        height: 113px;
+        border-bottom: 1px solid #a2a2a2;
+        border-left: 1px solid #a2a2a2;
+      }
+  }
+    }
+ }
 }
 // зуд
 .active1 .symptoms-foot--second,
@@ -359,7 +442,90 @@
   opacity: 1;
 }
 
-
+// стили для мозилы
+@-moz-document url-prefix() { 
+  .symptoms-br {
+  line-height: 1;
+}
+    .symptoms-foot {
+      &--first { 
+        bottom: 24.7%;
+        left: 195px;
+        &::after {
+          bottom: 14px;
+          right: 3px;
+          width: 278px;
+          height: 241px;
+          border-top: 1px solid  #a2a2a2;
+          border-right: 1px solid  #a2a2a2;
+        }
+      }
+      // запах
+      &--second {
+        bottom: 33.6%;
+        right: 200px;
+        &::after {
+        bottom: 14px;
+        right: 3px;
+        width: 432px;
+        height: 118px;
+        border-top: 1px solid #a2a2a2;
+        border-right: 1px solid #a2a2a2;
+        }
+      }
+      // деформация ногтя
+      &--third {
+        top: 17.5%;
+        right: 251px;
+        &::after {
+          bottom: -197px;
+          right: 3px;
+          width: 381px;
+          height: 190px;
+          border-bottom: 1px solid #a2a2a2;
+          border-right: 1px solid  #a2a2a2;
+        }
+      }
+      // шелушение
+      &--fourth {
+        top: 48.3%;
+        left: 186px;
+        &::after {
+          bottom: 14px;
+          right: -434px;
+          width: 438px;
+          height: 106px;
+          border-top: 1px solid #a2a2a2;
+          border-left: 1px solid #a2a2a2;
+        }
+    }
+    &--fifth {
+      top: 35.3%;
+      right: 212px;
+      &::after {
+        bottom: -24px;
+        right: -284px;
+        width: 288px;
+        height: 17px;
+        border-bottom: 1px solid #a2a2a2;
+        border-left: 1px solid #a2a2a2;
+      }
+  }
+  // волдыри
+    &--sixth {
+      top: 30.6%;
+      left: 189px;
+      &::after {
+        bottom: -120px;
+        right: -432px;
+        width: 436px;
+        height: 113px;
+        border-bottom: 1px solid #a2a2a2;
+        border-left: 1px solid #a2a2a2;
+      }
+  }
+    }
+}
 // adaptive
 @include r(1219) {
   .symptoms-foot {
@@ -449,6 +615,68 @@
     height: 81px;
   }
 }
+// стили для мозилы
+@-moz-document url-prefix()
+{
+  .symptoms-foot--first {
+    bottom: 34%;
+    left: 220px;
+    &::after {
+      bottom: 14px;
+      right: 3px;
+      width: 285px;
+      height: 154px;
+    }
+}
+  .symptoms-foot--second {
+    bottom: 25%;
+    right: 213px;
+    &::after {
+      width: 191px;
+      height: 114px;
+    }
+}
+.symptoms-foot--third {
+  top: 15%;
+  right: 150px;
+  &::after {
+    bottom: -137px;
+    right: 3px;
+    width: 254px;
+    height: 130px;
+  }
+}
+.symptoms-foot--fourth {
+  top: 45%;
+  left: 120px;
+  &::after {
+    bottom: 14px;
+    right: -273px;
+    width: 277px;
+    height: 98px;
+  }
+}
+.symptoms-foot--fifth {
+  top: 33.6%;
+  right: 123px;
+  &::after {
+    bottom: 1px;
+    right: -177px;
+    width: 170px;
+    height: 0;
+  }
+}
+.symptoms-foot--sixth {
+  top: 28%;
+  left: 117px;
+  &::after {
+    bottom: -88px;
+    right: -276px;
+    width: 280px;
+    height: 81px;
+  }
+}
+}
 }
 @include r(1023) {
   .symptoms-foot {
@@ -537,8 +765,72 @@
   margin-bottom: 45px;
 }
 }
+// стили для мозилы
+@-moz-document url-prefix()
+{
+  .symptoms-foot--first {
+    bottom: 34%;
+    left: 230px;
+    &::after {
+      bottom: 14px;
+      right: 3px;
+      width: 265px;
+      height: 128px;
+    }
 }
+  .symptoms-foot--second {
+    bottom: 25%;
+    right: 230px;
+    &::after {
+      width: 164px;
+      height: 90px
+    }
+}
+.symptoms-foot--third {
+  top: 13%;
+  right: 162px;
+  &::after {
+    bottom: -181px;
+    right: 3px;
+    width: 232px;
+    height: 174px;
+  }
+}
+.symptoms-foot--fourth {
+  top: 45%;
+  left: 120px;
+  &::after {
+    bottom: 14px;
+    right: -263px;
+    width: 267px;
+    height: 67px;
+  }
+}
+.symptoms-foot--fifth {
+  top: 32.7%;
+  right: 123px;
+  &::after {
+    bottom: -36px;
+    right: -156px;
+    width: 160px;
+    height: 29px;
+  }
+}
+.symptoms-foot--sixth {
+  top: 26%;
+  left: 122px;
+  &::after {
+    bottom: -130px;
+    right: -261px;
+    width: 265px;
+    height: 123px;
+  }
+}
+}
+}
+
 @include r(767) {
+
   .nowrap {
     display: block;
   }
@@ -735,87 +1027,4 @@
       margin-bottom: 0!important;
     }
   }
-}
-
-// стили для мозилы
-@-moz-document url-prefix()
-{
-    .symptoms-foot {
-      &--first { 
-        bottom: 24.7%;
-        left: 195px;
-        &::after {
-          bottom: 14px;
-          right: 3px;
-          width: 277px;
-          height: 244px;
-          border-top: 1px solid #a2a2a2;
-          border-right: 1px solid #a2a2a2;
-        }
-      }
-      // запах
-      &--second {
-        bottom: 33.6%;
-        right: 200px;
-        &::after {
-        bottom: 14px;
-        right: 3px;
-        width: 431px;
-        height: 121px;
-        border-top: 1px solid #a2a2a2;
-        border-right: 1px solid #a2a2a2;
-        }
-      }
-      // деформация ногтя
-      &--third {
-        top: 17.5%;
-        right: 251px;
-        &::after {
-          bottom: -193px;
-          right: 3px;
-          width: 380px;
-          height: 186px;
-          border-bottom: 1px solid #a2a2a2;
-          border-right: 1px solid  #a2a2a2;
-        }
-      }
-      // шелушение
-      &--fourth {
-        top: 48.3%;
-        left: 186px;
-        &::after {
-          bottom: 14px;
-          right: -435px;
-          width: 439px;
-          height: 110px;
-          border-top: 1px solid #a2a2a2;
-          border-left: 1px solid #a2a2a2;
-        }
-    }
-    &--fifth {
-      top: 35.3%;
-      right: 212px;
-      &::after {
-        bottom: -20px;
-        right: -284px;
-        width: 288px;
-        height: 13px;
-        border-bottom: 1px solid #a2a2a2;
-        border-left: 1px solid #a2a2a2;
-      }
-  }
-  // волдыри
-    &--sixth {
-      top: 30.6%;
-      left: 189px;
-      &::after {
-        bottom: -116px;
-        right: -432px;
-        width: 436px;
-        height: 109px;
-        border-bottom: 1px solid #a2a2a2;
-        border-left: 1px solid #a2a2a2;
-      }
-  }
-    }
 }

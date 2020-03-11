@@ -79,6 +79,9 @@
     color: #444444;
     text-align: center;
   }
+  &-br {
+    line-height: 1;
+  }
 }
 
 @include r(1219) {
