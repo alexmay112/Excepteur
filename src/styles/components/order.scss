@@ -192,6 +192,10 @@
   }
 
   &:nth-child(3) {
+    @include r(479) {
+      margin-bottom: 0;
+    }
+
     .order__top {
       padding-top: 38px;
 
