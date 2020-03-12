@@ -6,7 +6,20 @@ export default () => {
   //     });
   //   }
 
-  $('.components__btn').on('click', function (e) {
+  $('.components__btn').on('click', function () {
     $(this).parents('.components__item').toggleClass('active');
-  })
+  });
+
+  // $('body').on('click', function (e) {
+
+  //   var item = $('.components__item');
+  //   console.log(e.target);
+    
+  //   if (e.target === item[0]) {
+  //     console.log('work');
+  //   }
+  // });
+
+
+
 };
