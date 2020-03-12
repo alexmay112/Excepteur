@@ -13,9 +13,7 @@
     transform: translateX(-50%);
     z-index: 20;
   }
-    @include r(1023) {
-      display: none;
-    }
+    
   &__title { 
     margin-bottom: 40px;
     text-align: center;
@@ -79,6 +77,9 @@
     z-index: 21;
     position: relative;
     bottom: 2px;
+  }
+  &-br {
+    line-height: 1;
   }
 }
 

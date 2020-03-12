@@ -94,10 +94,14 @@
       height: 55px;
     }
   }
+  &-br { 
+    line-height: 1;
+  }
 }
 
 @include r(1219) {
   .healing { 
+    padding: 53px 0;
     &-list { 
       max-width: 100%;
     }
@@ -160,6 +164,9 @@
 
 @include r(479) {
   .healing { 
+    &__title { 
+      font-size: 30px;
+    }
     &-list {
       flex-wrap: wrap;
       justify-content: space-around;
@@ -172,6 +179,9 @@
       }
       &__description {
         font-size: 20px;
+      }
+      & img {
+        width: 267px;
       }
     }
     &-lower { 
@@ -188,8 +198,8 @@
     display: block;
   }
 }
-@-moz-document url-prefix() {
-  .healing-item__description.desc {
-    line-height: 20px;
-  }
-}
+// @-moz-document url-prefix() {
+//   .healing-item__description.desc {
+//     line-height: 20px;
+//   }
+// }

@@ -79,10 +79,14 @@
     color: #444444;
     text-align: center;
   }
+  &-br {
+    line-height: 1;
+  }
 }
 
 @include r(1219) {
   .use { 
+    padding: 53px 0;
     &-list { 
       max-width: 100%;
     }
@@ -155,6 +159,9 @@
 
 @include r(479) {
   .use { 
+    &__title { 
+      font-size: 30px;
+    }
     &__title {
       margin-bottom: 56px;
     }
@@ -172,9 +179,13 @@
       &__description {
         font-size: 20px;
       }
+      &__img {
+        width: 267px;
+      }
     }
     &__reference {
       margin-top: -20px;
     }
   }
+
 }
