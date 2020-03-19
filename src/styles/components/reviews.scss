@@ -245,6 +245,10 @@
     bottom: 0;
   }
 
+  @media (min-width: 2300px) {
+    border-bottom: 2px solid #bebebe;
+  }
+
   &::before {
     content: "";
     width: 10px;

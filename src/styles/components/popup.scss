@@ -1,6 +1,6 @@
 .my-popup {
   .prod {
-    width: 330px;
+    width: 295px;
     margin: 0 auto;
     position: relative;
     top: 0;
@@ -58,7 +58,7 @@
 }
 
 .popup__left {
-  margin: 0 30px 0 15px;
+  margin: 0 40px 0 25px;
 
   @include r(999) {
     display: none;
